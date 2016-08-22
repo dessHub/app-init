@@ -8,12 +8,14 @@ var methodOverride = require('method-override');
 
 //config files
 var db = require('./config/db');
+var mongoose = require('mongoose');
 
 //setting server port
 var port = process.env.PORT || 4000;
 
 //connect to mongodb
 mongoose.connect(db.url);
+
 
 //parse application/json
 app.use(bodyParser.json());
@@ -31,7 +33,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.static(__dirname + '/public'));
 
 // routes ==================================================
-require('./app/routes')(app); // configure our routes
+require('./app/routes/route')(app); // configure our routes
 
 // start app ===============================================
 // startup our app at http://localhost:4000;
