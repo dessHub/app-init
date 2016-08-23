@@ -1,10 +1,10 @@
 var express = require("express");
 var app = express();
 
-//Grap User model
-var User = require('./app/model/user.js');
+//Grab User model
+var User = require('../models/user');
 module.exports = function(app){
-
+/*
 //Server routes ========
 app.get('users', function(req,res){
   User.find(function(err, users){
@@ -13,12 +13,12 @@ app.get('users', function(req,res){
      res.json(users);
   });
  });
-
+*/
 
 //frontend routes =======
 //route to handle all angulerrequest
 app.get('*', function(req, res){
-   res.sendFile('./public/views/index.html');
+   res.sendfile('./public/views/index.html');
 });
 
 }

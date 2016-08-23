@@ -1,5 +1,5 @@
 angular.module('TestCtrl', []).controller('TestController', function($scope) {
 
-	$scope.tagline = 'Its working!!!';	
+	$scope.tagline = 'Horray!! Its working !';
 
 });

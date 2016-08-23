@@ -1,4 +1,4 @@
-// Config/db.js
-module.exports = {
-    url : 'mongodb://localhost/mean-dev'
-}
+// config/db.js
+    module.exports = {
+        url : 'mongodb://localhost/stencil-dev'
+    }

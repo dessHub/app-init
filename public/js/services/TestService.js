@@ -1,4 +1,4 @@
-angular.module('GeekService', []).factory('Geek', ['$http', function($http) {
+angular.module('TestService', []).factory('Test', ['$http', function($http) {
 
 	
 

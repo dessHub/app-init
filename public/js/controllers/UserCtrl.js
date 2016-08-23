@@ -1,5 +1,5 @@
 angular.module('UserCtrl', []).controller('UserController', function($scope) {
 
-	$scope.tagline = 'Use me always';
+	$scope.tagline = 'Play your cards hear';
 
 });
